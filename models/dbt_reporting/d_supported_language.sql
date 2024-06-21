@@ -1,3 +1,4 @@
+{{ config(schema='dbt_reporting') }}
 select distinct
   replace(
         replace(
@@ -11,5 +12,5 @@ WHERE 1=1
 AND trim(regexp_substr(SUPPORTED_LANGUAGES, '[^|]+', 1, levels.column_value)) NOT LIKE '%\r%'
 AND trim(regexp_substr(SUPPORTED_LANGUAGES, '[^|]+', 1, levels.column_value)) NOT LIKE '%amp;%'
 AND trim(regexp_substr(SUPPORTED_LANGUAGES, '[^|]+', 1, levels.column_value)) NOT LIKE '%/b%'
-AND trim(regexp_substr(SUPPORTED_LANGUAGES, '[^|]+', 1, levels.column_value)) IS NOT NULL
+AND replace(replace(trim(regexp_substr(SUPPORTED_LANGUAGES, '[^|]+', 1, levels.column_value)),'[',''),']','') IS NOT NULL
 order by 1

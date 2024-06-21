@@ -34,10 +34,17 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
-
+##    dbt_staging:
+##      +schema: dbt_staging
+    dbt_reporting:
+      +schema: dbt_reporting 
+      
 seeds:
   dbt_orcl:
+    
     games_may2024_full_utf8_pipe:
       +delimiter: "|"
     NVidiaStockData:
-      +delimiter: ","      
+      +delimiter: ","  
+
+          
