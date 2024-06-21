@@ -1,6 +1,6 @@
-set WALLET_LOCATION=C:\_projects\Wallet_CRADWH
+set WALLET_LOCATION=C:\Developer\Git\dbt_oracle\db_scripts\Wallet_CRADWH
 set WALLET_PASSWORD=12QWaszx
-set TNS_ADMIN=C:\_projects\Wallet_CRADWH\tnsnames.ora
+set TNS_ADMIN=C:\Developer\Git\dbt_oracle\db_scripts\Wallet_CRADWH\tnsnames.ora
 set DBT_ORACLE_USER=dbt_user
 set DBT_ORACLE_PASSWORD=R1ttmanmead01
 set DBT_ORACLE_SCHEMA=dbt_user
