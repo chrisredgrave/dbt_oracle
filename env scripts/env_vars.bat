@@ -1,0 +1,9 @@
+set WALLET_LOCATION=C:\_projects\Wallet_CRADWH
+set WALLET_PASSWORD=12QWaszx
+set TNS_ADMIN=C:\_projects\Wallet_CRADWH\tnsnames.ora
+set DBT_ORACLE_USER=dbt_user
+set DBT_ORACLE_PASSWORD=R1ttmanmead01
+set DBT_ORACLE_SCHEMA=dbt_user
+set DBT_ORACLE_DATABASE=YCZLNS9QK7S1MFG_CRADWH
+set DBT_ORACLE_HOST=adb.uk-london-1.oraclecloud.com
+set DBT_ORACLE_SERVICE=yczlns9qk7s1mfg_cradwh_low.adb.oraclecloud.com
